@@ -1,0 +1,164 @@
+/* --- Bài 6: Hình ảnh & Media --- */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    /* Canh giữa ảnh */
+    margin-top: 30px;
+}
+
+.media-image {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    /* Bo góc ảnh */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    /* Tạo bóng cho ảnh */
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+
+/* --- Bài 7: Thư viện ảnh --- */
+
+.gallery-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gallery {
+    display: flex;
+    /* hoặc dùng display: grid */
+    flex-wrap: wrap;
+    /* xuống hàng nếu không đủ chỗ */
+    justify-content: center;
+    /* canh giữa */
+    gap: 20px;
+    /* khoảng cách giữa các ảnh */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+
+/* Hover: zoom nhẹ */
+
+.gallery img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* --- Bài 8: Chèn video YouTube --- */
+
+.video-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.youtube-video {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 15px;
+    /* Bo góc khung video */
+    margin-top: 20px;
+    /* Khoảng cách với nội dung khác */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* --- Bài 9: Chèn audio MP3 --- */
+
+.audio-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.audio-player {
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    /* viền nhẹ */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+
+/* --- Bài 10: Portfolio cá nhân --- */
+
+.portfolio-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* xuống hàng nếu màn hình nhỏ */
+    justify-content: center;
+    gap: 20px;
+    /* khoảng cách giữa các dự án */
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Hover nổi bật */
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Nền sáng tổng thể */
+
+body {
+    background-color: #f0f8ff;
+}
